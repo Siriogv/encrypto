@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Oxios - Form basic</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/favicon/apple-touch-icon-144x144.png" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-128x128.png" sizes="128x128" />
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="loader text-primary">
+			<i class="fas fa-circle-notch loading"></i>
+		</div>
+		<aside class="sidebar">
+			<a href="dashboard-1.html" class="logo">
+				<img src="images/logo.png" alt=""> <b>Oxios</b>
+			</a>
+			<nav>
+				<ul class="sidebar-list">
+					<li>
+						<form class="input-group">
+							<div class="input-group-icon"><i class="fas fa-search"></i></div>
+							<input type="text" class="form-control" placeholder="Search...">
+						</form>
+					</li>
+					<li class="sidebar-list-item"><i class="fe fe-sliders"></i> <span>Dashboards</span> <i class="fas fa-chevron-down pull-right"></i></li>
+					<li>
+						<ul>
+							<li><a class="sidebar-list-item" href="dashboard-1.html">Dashboard 1</a></li>
+							<li><a class="sidebar-list-item" href="dashboard-2.html">Dashboard 2 (v.1)</a></li>
+							<li><a class="sidebar-list-item" href="dashboard-2-1.html">Dashboard 2 (v.2)</a></li>
+							<li><a class="sidebar-list-item" href="dashboard-3.html">Dashboard 3</a></li>
+						</ul>
+					</li>
+					<li><span class="sidebar-list-header">Pages and extra</span></li>
+					<li><a class="sidebar-list-item" href="page-profile.html"><i class="fe fe-user"></i> <span>Profile</span></a></li>
+					<li><a class="sidebar-list-item" href="page-chat.html"><i class="fe fe-message-square"></i> <span>Chat</span></a></li>
+					<li><a class="sidebar-list-item" href="page-invoice.html"><i class="fe fe-dollar-sign"></i> <span>Invoice</span></a></li>
+					<li><a class="sidebar-list-item" href="page-faq.html"><i class="fe fe-help-circle"></i> <span>FAQ</span></a></li>
+					<li class="sidebar-list-item"><i class="fe fe-layout"></i> <span>Access pages</span> <i class="fas fa-chevron-down pull-right"></i></li>
+					<li>
+						<ul>
+							<li><a class="sidebar-list-item" href="page-signin.html">Sign In</a></li>
+							<li><a class="sidebar-list-item" href="page-signup.html">Sign Up</a></li>
+							<li><a class="sidebar-list-item" href="page-lockscreen.html">Lockscreen</a></li>
+							<li><a class="sidebar-list-item" href="page-under-construction.html">Under Construction</a></li>
+							<li><a class="sidebar-list-item" href="page-404.html">404 Error</a></li>
+							<li><a class="sidebar-list-item" href="page-500.html">500 Error</a></li>
+						</ul>
+					</li>
+					<li class="sidebar-list-item"><i class="fe fe-folder-plus"></i> <span>Multilevel</span> <i class="fas fa-chevron-down pull-right"></i></li>
+					<li>
+						<ul>
+							<li><a class="sidebar-list-item" href="#">Level 1</a></li>
+							<li class="sidebar-list-item">Level 1 <i class="fas fa-chevron-down pull-right"></i></li>
+							<li>
+								<ul>
+									<li><a href="#" class="sidebar-list-item">Level 2</a></li>
+									<li class="sidebar-list-item">Level 2 <i class="fas fa-chevron-down pull-right"></i></li>
+									<li>
+										<ul>
+											<li><a href="#" class="sidebar-list-item">Level 3</a></li>
+											<li><a href="#" class="sidebar-list-item">Level 3</a></li>
+											<li><a href="#" class="sidebar-list-item">Level 3</a></li>
+										</ul>
+									</li>
+									<li><a href="#" class="sidebar-list-item">Level 2</a></li>
+								</ul>
+							</li>
+							<li><a href="#" class="sidebar-list-item">Level 1</a></li>
+						</ul>
+					</li>
+					<li><span class="sidebar-list-header">User interface</span></li>
+					<li class="sidebar-list-item"><i class="fe fe-layers"></i> <span>Layouts</span> <i class="fas fa-chevron-down pull-right"></i></li>
+					<li>
+						<ul>
+							<li><a class="sidebar-list-item" href="dashboard-1.html">Standart</a></li>
+							<li><a class="sidebar-list-item" href="layout-horizontal-fluid.html">Horizontal fluid</a></li>
+							<li><a class="sidebar-list-item" href="layout-horizontal-boxed.html">Horizontal boxed</a></li>
+							<li><a class="sidebar-list-item" href="layout-inverse-horizontal-fluid.html">Inversed horizontal fluid</a></li>
+							<li><a class="sidebar-list-item" href="layout-inverse-horizontal-boxed.html">Inversed horizontal boxed</a></li>
+						</ul>
+					</li>
+					<li class="sidebar-list-item"><i class="fe fe-box"></i> <span>Components</span> <i class="fas fa-chevron-down pull-right"></i></li>
+					<li>
+						<ul>
+							<li><a class="sidebar-list-item" href="component-alerts.html">Alerts</a></li>
+							<li><a class="sidebar-list-item" href="component-avatar.html">Avatar</a></li>
+							<li><a class="sidebar-list-item" href="component-buttons.html">Buttons and pagination</a></li>
+							<li><a class="sidebar-list-item" href="component-box.html">Box</a></li>
+							<li><a class="sidebar-list-item" href="component-card.html">Card</a></li>
+							<li><a class="sidebar-list-item" href="component-charts.html">Charts</a></li>
+							<li><a class="sidebar-list-item" href="component-events.html">Events</a></li>
+							<li><a class="sidebar-list-item" href="component-modals.html">Modals</a></li>
+							<li><a class="sidebar-list-item" href="component-tables.html">Tables</a></li>
+							<li><a class="sidebar-list-item" href="component-image.html">Image</a></li>
+							<li><a class="sidebar-list-item" href="component-icons.html">Icons</a></li>
+							<li><a class="sidebar-list-item" href="component-user-panel.html">User panel</a></li>
+							<li><a class="sidebar-list-item" href="component-widgets.html">Widgets</a></li>
+						</ul>
+					</li>
+					<li class="sidebar-list-item"><i class="fe fe-edit"></i><span>Forms</span><i class="fas fa-chevron-down pull-right"></i></li>
+					<li>
+						<ul>
+							<li><a class="sidebar-list-item" href="form-basic.html">Basic form</a></li>
+							<li><a class="sidebar-list-item" href="form-wizzard.html">Form wizzard</a></li>
+							<li><a class="sidebar-list-item" href="form-validation.html">Form validation</a></li>
+							<li><a class="sidebar-list-item" href="form-editor.html">Form editor</a></li>
+						</ul>
+					</li>
+					<li><a class="sidebar-list-item" href="typography.html"><i class="fe fe-type"></i> <span>Typography</span></a></li>
+				</ul>
+			</nav>
+		</aside>
+		<header class="header">
+			<ul class="header-nav">
+				<li>
+					<button id="js-toggle-sidebar" class="header-nav-item">
+						<i class="fas fa-bars"></i>
+					</button>
+				</li>
+			</ul>
+			<ul class="header-nav d-none d-sm-flex">
+				<li>
+					<a href="#" data-dropdown class="header-nav-item">Dashboard</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="dashboard-1.html">Dashboard 1</a></li>
+						<li><a class="dropdown-item" href="dashboard-2.html">Dashboard 2 (v.1)</a></li>
+						<li><a class="dropdown-item" href="dashboard-2-1.html">Dashboard 2 (v.2)</a></li>
+						<li><a class="dropdown-item" href="dashboard-3.html">Dashboard 3</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" data-dropdown class="header-nav-item">Layout</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="dashboard-1.html">Standart</a></li>
+						<li><a class="dropdown-item" href="layout-horizontal-fluid.html">Horizontal fluid</a></li>
+						<li><a class="dropdown-item" href="layout-horizontal-boxed.html">Horizontal boxed</a></li>
+						<li><a class="dropdown-item" href="layout-inverse-horizontal-fluid.html">Inversed horizontal fluid</a></li>
+						<li><a class="dropdown-item" href="layout-inverse-horizontal-boxed.html">Inversed horizontal boxed</a></li>
+					</ul>
+				</li>
+			</ul>
+			
+			<ul class="header-nav pull-right">
+				<li>
+					<a href="#" data-dropdown class="header-nav-item">
+						<i class="far fa-envelope"></i>
+						<span class="badge badge-pill badge-success">2</span>
+					</a>
+					<ul class="dropdown-menu px-20 py-10">
+						<li class="message">
+							<div class="avatar avatar-sm">
+								<img src="images/avatar-3.jpg" alt="">
+							</div>
+							<div class="message-content">
+								<div class="message-bubble">
+									<p>Hello, John!</p>
+								</div>
+								<small class="text-secondary text-sm">Today, 10:31</small>
+							</div>
+							<div class="message-actions">
+								<button><i class="far fa-trash-alt"></i></button>
+								<button><i class="far fa-flag"></i></button>
+							</div>
+						</li>
+						<li class="message">
+							<div class="avatar avatar-sm">
+								<img src="images/avatar-3.jpg" alt="">
+							</div>
+							<div class="message-content">
+								<div class="message-bubble">
+									<p>What about our project?</p>
+								</div>
+								<small class="text-secondary text-sm">Today, 10:32</small>
+							</div>
+							<div class="message-actions">
+								<button><i class="far fa-trash-alt"></i></button>
+								<button><i class="far fa-flag"></i></button>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" data-dropdown class="header-nav-item">
+						<i class="far fa-bell"></i>
+						<span class="badge badge-pill badge-primary">3</span>
+					</a>
+					<ul class="dropdown-menu px-20 py-10">
+						<li class="event-column event-column-success">
+							<div class="event-content">
+								<small class="text-secondary"><i class="far fa-envelope"></i> From example@gmail.com</small>
+								<p><a href="#">Alex White</a> sent you an email.</p>
+							</div>
+							<small class="text-secondary pull-right">1 hr.</small>
+						</li>
+						<li class="event-column event-column-primary">
+							<div class="event-content">
+								<small class="text-secondary"><i class="fas fa-thumbtack"></i> New task</small>
+								<p><b>To <a href="#">John Doe</a>: new API methods.</b></p>
+								<p class="text-secondary text-sm">Implement new API methods for mobile app.</p>
+							</div>
+							<small class="text-secondary pull-right">7 min.</small>
+						</li>
+						<li class="event-column event-column-secondary">
+							<div class="event-content">
+								<small class="text-secondary"><i class="far fa-bell"></i> Notification</small>
+								<p><a href="#">Alex White</a> joined to project</p>
+							</div>
+							<small class="text-secondary pull-right">now</small>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" id="js-enter-fullscreen" class="header-nav-item">
+						<i class="fas fa-expand-arrows-alt"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#" data-dropdown class="user-panel">
+						<div class="user-panel-image">
+							<div class="avatar avatar-sm">
+								<img src="images/avatar-1.jpg" alt="">
+							</div>
+						</div>
+						<div class="user-panel-info">
+							<p>John Doe</p>
+							<small class="text-black-50">Administrator</small>
+						</div>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="page-profile.html"><i class="far fa-user"></i> Profile</a></li>
+						<li class="dropdown-divider"></li>
+						<li><a class="dropdown-item" href="page-signin.html"><i class="fas fa-power-off"></i> Logout</a></li>
+					</ul>
+				</li>
+			</ul>
+		</header>
+		<main class="content">
+			<div class="container-fluid">
+				<div class="content-header">
+					<h1>Form Basic</h1>
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="dashboard-1.html">Dashboard</a></li>
+							<li class="breadcrumb-item active">Form Basic</li>
+						</ol>
+					</nav>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-6">
+						<form class="box">
+							<div class="box-header">
+								<h3 >Example form</h3>
+								<div class="box-actions">
+									<a href="#" class="box-actions-item">Link</a>
+									<button class="box-actions-item"><i class="fas fa-minus"></i></button>
+									<button class="box-actions-item"><i class="fas fa-times"></i></button>
+								</div>
+							</div>
+							<div class="box-body">
+								<div class="form-group">
+									<label for="exampleInput">Example input</label>
+									<input id="exampleInput" type="text" class="form-control" placeholder="This is example input">
+									<small class="text-sm text-secondary">Help block.</small>
+								</div>
+								<div class="form-group">
+									<label for="readonlyInput">Readonly input</label>
+									<input id="readonlyInput" type="text" readonly class="form-control" placeholder="This is readonly input">
+								</div>
+								<div class="form-group">
+									<label for="disabledInput">Disabled input</label>
+									<input id="disabledInput" type="text" disabled class="form-control" placeholder="This is disabled input">
+								</div>
+								<div class="form-group">
+									<label for="plaintextInput">Plaintext input</label>
+									<input id="plaintextInput" type="text" readonly value="Plaintext input" class="form-control-plaintext" placeholder="This is plaintex input">
+								</div>
+								<div class="form-group">
+									<label for="exampleSelect">Example select</label>
+									<select id="exampleSelect" class="form-control">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label for="disabledSelect">Disabled select</label>
+									<select id="disabledSelect" disabled class="form-control">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label for="multipleSelect">Example multiple select</label>
+									<select id="multipleSelect" multiple class="form-control">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label for="exampleTextarea">Example textarea</label>
+									<textarea id="exampleTextarea" class="form-control" placeholder="This is example textarea"></textarea>
+								</div>
+								<div class="form-group">
+									<label for="fileInput">Example file input</label>
+									<input id="fileInput" type="file" class="form-control">
+								</div>
+								<div class="form-group">
+									<label class="form-checkbox">
+										<input type="checkbox">
+										<span class="form-label">Default checkbox</span>
+									</label>
+								</div>
+								<div class="form-group">
+									<label class="form-radio">
+										<input name="radio" type="radio">
+										<span class="form-label">Default radio button 1</span>
+									</label>
+									<label class="form-radio">
+										<input name="radio" type="radio">
+										<span class="form-label">Default radio button 2</span>
+									</label>
+								</div>
+							</div>
+							<div class="box-footer">
+								<a href="#" class="btn btn-link">Back</a>
+								<button type="submit" class="btn btn-primary pull-right">Submit</button>
+							</div>
+						</form>
+
+						<form class="box">
+							<div class="box-header">
+								<h3 >Custom controls</h3>
+							</div>
+							<div class="box-body">
+								<div class="form-group">
+									<label class="form-checkbox-custom">
+										<input type="checkbox">
+										<span class="form-label">Custom checkbox 1</span>
+									</label>
+									<label class="form-checkbox-custom">
+										<input checked type="checkbox">
+										<span class="form-label">Custom checkbox 2</span>
+									</label>
+								</div>
+								<div class="form-group">
+									<label class="form-checkbox-custom">
+										<input disabled type="checkbox">
+										<span class="form-label">Disabled checkbox</span>
+									</label>
+									<label class="form-checkbox-custom">
+										<input disabled checked type="checkbox">
+										<span class="form-label">Disabled checkbox checked</span>
+									</label>
+								</div>
+								<div class="form-group">
+									<label class="form-radio-custom">
+										<input name="custom_radio" value="1" type="radio">
+										<span class="form-label">Custom radio button 1</span>
+									</label>
+									<label class="form-radio-custom">
+										<input checked name="custom_radio" value="2" type="radio">
+										<span class="form-label">Custom radio button 2</span>
+									</label>
+								</div>
+								<div class="form-group">
+									<label class="form-radio-custom">
+										<input disabled name="disabled_custom_radio" value="1" type="radio">
+										<span class="form-label">Custom radio button 1</span>
+									</label>
+									<label class="form-radio-custom">
+										<input disabled checked name="disabled_custom_radio" value="2" type="radio">
+										<span class="form-label">Custom radio button 2</span>
+									</label>
+								</div>
+							</div>
+							<div class="box-footer">
+								<a href="#" class="btn btn-link">Back</a>
+								<button type="submit" class="btn btn-primary pull-right">Submit</button>
+							</div>
+						</form>
+
+						<form class="box">
+							<div class="box-header">
+								<h3>Input group</h3>
+							</div>
+							<div class="box-body">
+								<div class="form-group">
+									<div class="form-group">
+										<label for="inputGroupEmail">Input group</label>
+										<div class="input-group">
+											<div class="input-group-icon">Email</div>
+											<input id="inputGroupEmail" type="text" class="form-control" placeholder="This is input with text">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="inputGroupEmailLg">Input group large</label>
+										<div class="input-group input-group-lg">
+											<div class="input-group-icon">Large</div>
+											<input id="inputGroupEmailLg" type="text" class="form-control" placeholder="This is input with text">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="inputGroupEmailSm">Input group small</label>
+										<div class="input-group input-group-sm">
+											<div class="input-group-icon">Small</div>
+											<input id="inputGroupEmailSm" type="text" class="form-control" placeholder="This is input with text">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="inputGroupEmailIcon1">Input group with icon</label>
+										<div class="input-group">
+											<div class="input-group-icon"><i class="fab fa-twitter"></i></div>
+											<input id="inputGroupEmailIcon1" type="text" class="form-control" placeholder="This is input with icon">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="inputGroupEmailIcon2">Input group with icon</label>
+										<div class="input-group">
+											<input id="inputGroupEmailIcon2" type="text" class="form-control" placeholder="This is input with icon">
+											<div class="input-group-icon"><i class="fab fa-twitter"></i></div>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="inputGroupEmailButton1">Input group with button</label>
+										<div class="input-group">
+											<button class="btn btn-primary">Send</button>
+											<input id="inputGroupEmailButton1" type="text" class="form-control" placeholder="This is input with button">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="inputGroupEmailButton2">Input group with button</label>
+										<div class="input-group">
+											<input id="inputGroupEmailButton2" type="text" class="form-control" placeholder="This is input with button">
+											<button class="btn btn-primary">Send</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="box-footer">
+								<a href="#" class="btn btn-link">Back</a>
+								<button class="btn btn-priamry pull-right">Submit</button>
+							</div>
+						</form>
+						<form class="box">
+							<div class="box-header">
+								<h3>Mask</h3>
+							</div>
+							<div class="box-body">
+								<div class="form-group">
+									<label for="htmlPhoneMask">Phone</label>
+									<input id="htmlPhoneMask" type="tel" data-mask="+{7}(000)000-00-00" class="form-control" placeholder="+7(900)000-00-00">
+								</div>
+								<div class="form-group">
+									<label for="htmlCustomMask">Custom string</label>
+									<input id="htmlCustomMask" type="text" data-mask="{#}000[aaa]/NIC-`*[**]" class="form-control" placeholder="#123/NIC-456">
+								</div>
+								<p>Define <code>data-mask={your-mask-pattern}</code> attribute to activate mask.</p>
+								<hr>
+								<div class="form-group">
+									<label for="htmlDateMask">Date</label>
+									<input id="htmlDateMask" type="text" data-mask-date="YYYY-MM-DD" class="form-control" placeholder="YYYY/MM/DD">
+								</div>
+								<div class="form-group">
+									<label for="htmlTimeMask">Time</label>
+									<input id="htmlTimeMask" type="text" data-mask-date="HH:mm:ss" class="form-control" placeholder="YYYY/HH:mm:ss">
+								</div>
+								<p>Define <code>data-mask-date={date-pattern}</code> attribute to activate date mask.</p>
+								<p>Compatible with moment.js. You can change settings in <code>dataMaskDate()</code> method in <code>DomActionsHandler.js</code> class</p>
+							</div>
+							<div class="box-footer">
+								<button class="btn btn-primary pull-right">Submit</button>
+							</div>
+						</form>
+					</div>
+					<div class="col-lg-6">
+						<form class="box">
+							<div class="box-header">
+								<h3 >Sizing</h3>
+								<div class="box-actions">
+									<a href="#" class="box-actions-item">Link</a>
+									<button class="box-actions-item"><i class="fas fa-minus"></i></button>
+									<button class="box-actions-item"><i class="fas fa-times"></i></button>
+								</div>
+							</div>
+							<div class="box-body">
+								<div class="form-group">
+									<label for="largeInput" class="form-label-lg">Large input</label>
+									<input id="largeInput" type="text" class="form-control form-control-lg" placeholder="Large input">
+								</div>
+								<div class="form-group">
+									<label for="defaultInput" class="form-label">Default input</label>
+									<input id="defaultInput" type="text" class="form-control form-control" placeholder="Default input">
+								</div>
+								<div class="form-group">
+									<label for="smallInput" class="form-label-sm">Small input</label>
+									<input id="smallInput" type="text" class="form-control form-control-sm" placeholder="Small input">
+								</div>
+								<div class="form-group">
+									<select class="form-control form-control-lg">
+										<option>Large select</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</select>
+									<select class="form-control">
+										<option>Default</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</select>
+									<select class="form-control form-control-sm">
+										<option>Small select</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</select>
+								</div>
+							</div>
+							<div class="box-footer">
+								<a href="#" class="btn btn-link">Back</a>
+								<button type="submit" class="btn btn-primary pull-right">Submit</button>
+							</div>
+						</form>
+						
+						<form class="box">
+							<div class="box-header">
+								<h3 >Horizontal form</h3>
+								<div class="box-actions">
+									<a href="#" class="box-actions-item">Link</a>
+									<button class="box-actions-item"><i class="fas fa-minus"></i></button>
+									<button class="box-actions-item"><i class="fas fa-times"></i></button>
+								</div>
+							</div>
+							<div class="box-body">
+								<div class="form-group row">
+									<label for="horizontalName" class="form-label col-3">Name</label>
+									<div class="col-9">
+										<input id="horizontalName" type="text" class="form-control" placeholder="Enter your name">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="horizontalEmail" class="form-label col-3">Email</label>
+									<div class="col-9">
+										<input id="horizontalEmail" type="email" class="form-control" placeholder="Enter your email">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="horizontalPassword" class="form-label col-3">Password</label>
+									<div class="col-9">
+										<input id="horizontalPassword" type="password" class="form-control" placeholder="Enter your password">
+									</div>
+								</div>
+								<div class="form-group row">
+									<div class="form-label col-3">Gender</div>
+									<div class="col-9">
+										<label class="form-radio">
+											<input name="gender" value="1" type="radio">
+											<span class="form-checkbox-text">Male</span>
+										</label>
+										<label class="form-radio">
+											<input name="gender" value="2" type="radio">
+											<span class="form-checkbox-text">Female</span>
+										</label>
+									</div>
+								</div>
+								<div class="form-group row">
+									<div class="form-label col-3">Newsletter</div>
+									<div class="col-9">
+										<label class="form-checkbox">
+											<input type="checkbox">
+											<span class="form-checkbox-text">Subscribe to newsletter</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="box-footer">
+								<a href="#" class="btn btn-link">Back</a>
+								<button type="submit" class="btn btn-primary pull-right">Submit</button>
+							</div>
+						</form>
+						<form class="box">
+							<div class="box-header">
+								<h3>Column sizing</h3>
+							</div>
+							<div class="box-body">
+								<div class="row">
+									<div class="col-sm-4 form-group">
+										<label for="sizingFirstName">First name</label>
+										<input id="sizingFirstName" type="text" class="form-control" placeholder="First name">
+									</div>
+									<div class="col-sm-4 form-group">
+										<label for="sizingLastName">Last name</label>
+										<input id="sizingLastName" type="text" class="form-control" placeholder="Last name">
+									</div>
+									<div class="col-sm-4 form-group">
+										<label for="sizingEmail">Email</label>
+										<input id="sizingEmail" type="email" class="form-control" placeholder="Email">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-12 form-group">
+										<label for="sizingAddress">Address</label>
+										<input id="sizingAddress" type="text" class="form-control" placeholder="Address">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 form-group">
+										<label for="sizingCity">City</label>
+										<input id="sizingCity" type="text" class="form-control" placeholder="City">
+									</div>
+									<div class="col-sm-3 form-group">
+										<label for="sizingState">State</label>
+										<input id="sizingState" type="text" class="form-control" placeholder="State">
+									</div>
+									<div class="col-sm-3 form-group">
+										<label for="sizingZip">Zip</label>
+										<input id="sizingZip" type="text" class="form-control" placeholder="Zip">
+									</div>
+								</div>
+							</div>
+							<div class="box-footer">
+								<button class="btn btn-primary pull-right">Submit</button>
+							</div>
+						</form>
+
+						<form class="box needs-validation" novalidate>
+							<div class="box-header">
+								<h3>JS validation</h3>
+							</div>
+							<div class="box-body">
+								<div class="row">
+									<div class="col-sm-4 form-group">
+										<label for="validationFirstName">First name <sup class="text-danger">*</sup></label>
+										<input id="validationFirstName" type="text" class="form-control" placeholder="First name" required>
+										<span class="valid-feedback">Fine!</span>
+										<span class="invalid-feedback">Field is required.</span>
+									</div>
+									<div class="col-sm-4 form-group">
+										<label for="validationLastName">Last name <sup class="text-danger">*</sup></label>
+										<input id="validationLastName" type="text" class="form-control" placeholder="Last name" required>
+										<span class="valid-feedback">Fine!</span>
+										<span class="invalid-feedback">Field is required.</span>
+									</div>
+									<div class="col-sm-4 form-group">
+										<label for="validationEmail">Email <sup class="text-danger">*</sup></label>
+										<input id="validationEmail" type="email" class="form-control" placeholder="Email" required>
+										<span class="valid-feedback">Fine!</span>
+										<span class="invalid-feedback">Field is required and must be email.</span>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-12 form-group">
+										<label for="validationAddress">Address</label>
+										<input id="validationAddress" type="text" class="form-control" placeholder="Address">
+										<span class="valid-feedback">Fine!</span>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6 form-group">
+										<label for="validationCity">City</label>
+										<input id="validationCity" type="text" class="form-control" placeholder="City">
+									</div>
+									<div class="col-sm-3 form-group">
+										<label for="validationState">State</label>
+										<input id="validationState" type="text" class="form-control" placeholder="State">
+									</div>
+									<div class="col-sm-3 form-group">
+										<label for="validationZip">Zip</label>
+										<input id="validationZip" type="text" class="form-control" placeholder="Zip">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="form-label">Gender <sup class="text-danger">*</sup></div>
+									<label class="form-radio-custom">
+										<input type="radio" name="gender" value="m" required>
+										<span class="form-label">Male</span>
+									</label>
+									<label class="form-radio-custom">
+										<input type="radio" name="gender" value="w" required>
+										<span class="form-label">Female</span>
+										<span class="invalid-feedback">Сhoose your gender.</span>
+									</label>
+								</div>
+								<div class="form-group">
+									<label class="form-checkbox-custom">
+										<input type="checkbox" required>
+										<span class="form-label">I agree to the processing of personal data <sup class="text-danger">*</sup></span>
+									</label>
+								</div>
+							</div>
+							<div class="box-footer">
+								<button class="btn btn-primary pull-right">Submit</button>
+							</div>
+						</form>
+
+						<form class="box">
+							<div class="box-header">
+								<h3>HTML5 validation</h3>
+							</div>
+							<div class="box-body">
+								<div class="row">
+									<div class="col-sm-4 form-group">
+										<label for="htmlFirstName">First name <sup class="text-danger">*</sup></label>
+										<input id="htmlFirstName" type="text" class="form-control" placeholder="First name" required>
+									</div>
+									<div class="col-sm-4 form-group">
+										<label for="htmlLastName">Last name <sup class="text-danger">*</sup></label>
+										<input id="htmlLastName" type="text" class="form-control" placeholder="Last name" required>
+									</div>
+									<div class="col-sm-4 form-group">
+										<label for="htmlEmail">Email <sup class="text-danger">*</sup></label>
+										<input id="htmlEmail" type="email" class="form-control" placeholder="Email" required>
+									</div>
+								</div>
+							</div>
+							<div class="box-footer">
+								<button class="btn btn-primary pull-right">Submit</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				
+			</div>
+		</main>
+	</div>
+	
+	<script src="https://cdn.ckeditor.com/4.10.1/standard/ckeditor.js"></script>
+	<script src="assets/js/app.js"></script>
+</body>
+
+</html>

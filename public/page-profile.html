@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Oxios - Profile</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/favicon/apple-touch-icon-144x144.png" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="images/favicon/favicon-128x128.png" sizes="128x128" />
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/main.css">
+
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.33&key=AIzaSyBOdkAKK1Q8cdMhBWMe815gRcz71Lyf2aI"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="loader text-primary">
+			<i class="fas fa-circle-notch loading"></i>
+		</div>
+		<aside class="sidebar">
+			<a href="dashboard-1.html" class="logo">
+				<img src="images/logo.png" alt=""> <b>Oxios</b>
+			</a>
+			<nav>
+				<ul class="sidebar-list">
+					<li>
+						<form class="input-group">
+							<div class="input-group-icon"><i class="fas fa-search"></i></div>
+							<input type="text" class="form-control" placeholder="Search...">
+						</form>
+					</li>
+					<li class="sidebar-list-item"><i class="fe fe-sliders"></i> <span>Dashboards</span> <i class="fas fa-chevron-down pull-right"></i></li>
+					<li>
+						<ul>
+							<li><a class="sidebar-list-item" href="dashboard-1.html">Dashboard 1</a></li>
+							<li><a class="sidebar-list-item" href="dashboard-2.html">Dashboard 2 (v.1)</a></li>
+							<li><a class="sidebar-list-item" href="dashboard-2-1.html">Dashboard 2 (v.2)</a></li>
+							<li><a class="sidebar-list-item" href="dashboard-3.html">Dashboard 3</a></li>
+						</ul>
+					</li>
+					<li><span class="sidebar-list-header">Pages and extra</span></li>
+					<li><a class="sidebar-list-item" href="page-profile.html"><i class="fe fe-user"></i> <span>Profile</span></a></li>
+					<li><a class="sidebar-list-item" href="page-chat.html"><i class="fe fe-message-square"></i> <span>Chat</span></a></li>
+					<li><a class="sidebar-list-item" href="page-invoice.html"><i class="fe fe-dollar-sign"></i> <span>Invoice</span></a></li>
+					<li><a class="sidebar-list-item" href="page-faq.html"><i class="fe fe-help-circle"></i> <span>FAQ</span></a></li>
+					<li class="sidebar-list-item"><i class="fe fe-layout"></i> <span>Access pages</span> <i class="fas fa-chevron-down pull-right"></i></li>
+					<li>
+						<ul>
+							<li><a class="sidebar-list-item" href="page-signin.html">Sign In</a></li>
+							<li><a class="sidebar-list-item" href="page-signup.html">Sign Up</a></li>
+							<li><a class="sidebar-list-item" href="page-lockscreen.html">Lockscreen</a></li>
+							<li><a class="sidebar-list-item" href="page-under-construction.html">Under Construction</a></li>
+							<li><a class="sidebar-list-item" href="page-404.html">404 Error</a></li>
+							<li><a class="sidebar-list-item" href="page-500.html">500 Error</a></li>
+						</ul>
+					</li>
+					<li class="sidebar-list-item"><i class="fe fe-folder-plus"></i> <span>Multilevel</span> <i class="fas fa-chevron-down pull-right"></i></li>
+					<li>
+						<ul>
+							<li><a class="sidebar-list-item" href="#">Level 1</a></li>
+							<li class="sidebar-list-item">Level 1 <i class="fas fa-chevron-down pull-right"></i></li>
+							<li>
+								<ul>
+									<li><a href="#" class="sidebar-list-item">Level 2</a></li>
+									<li class="sidebar-list-item">Level 2 <i class="fas fa-chevron-down pull-right"></i></li>
+									<li>
+										<ul>
+											<li><a href="#" class="sidebar-list-item">Level 3</a></li>
+											<li><a href="#" class="sidebar-list-item">Level 3</a></li>
+											<li><a href="#" class="sidebar-list-item">Level 3</a></li>
+										</ul>
+									</li>
+									<li><a href="#" class="sidebar-list-item">Level 2</a></li>
+								</ul>
+							</li>
+							<li><a href="#" class="sidebar-list-item">Level 1</a></li>
+						</ul>
+					</li>
+					<li><span class="sidebar-list-header">User interface</span></li>
+					<li class="sidebar-list-item"><i class="fe fe-layers"></i> <span>Layouts</span> <i class="fas fa-chevron-down pull-right"></i></li>
+					<li>
+						<ul>
+							<li><a class="sidebar-list-item" href="dashboard-1.html">Standart</a></li>
+							<li><a class="sidebar-list-item" href="layout-horizontal-fluid.html">Horizontal fluid</a></li>
+							<li><a class="sidebar-list-item" href="layout-horizontal-boxed.html">Horizontal boxed</a></li>
+							<li><a class="sidebar-list-item" href="layout-inverse-horizontal-fluid.html">Inversed horizontal fluid</a></li>
+							<li><a class="sidebar-list-item" href="layout-inverse-horizontal-boxed.html">Inversed horizontal boxed</a></li>
+						</ul>
+					</li>
+					<li class="sidebar-list-item"><i class="fe fe-box"></i> <span>Components</span> <i class="fas fa-chevron-down pull-right"></i></li>
+					<li>
+						<ul>
+							<li><a class="sidebar-list-item" href="component-alerts.html">Alerts</a></li>
+							<li><a class="sidebar-list-item" href="component-avatar.html">Avatar</a></li>
+							<li><a class="sidebar-list-item" href="component-buttons.html">Buttons and pagination</a></li>
+							<li><a class="sidebar-list-item" href="component-box.html">Box</a></li>
+							<li><a class="sidebar-list-item" href="component-card.html">Card</a></li>
+							<li><a class="sidebar-list-item" href="component-charts.html">Charts</a></li>
+							<li><a class="sidebar-list-item" href="component-events.html">Events</a></li>
+							<li><a class="sidebar-list-item" href="component-modals.html">Modals</a></li>
+							<li><a class="sidebar-list-item" href="component-tables.html">Tables</a></li>
+							<li><a class="sidebar-list-item" href="component-image.html">Image</a></li>
+							<li><a class="sidebar-list-item" href="component-icons.html">Icons</a></li>
+							<li><a class="sidebar-list-item" href="component-user-panel.html">User panel</a></li>
+							<li><a class="sidebar-list-item" href="component-widgets.html">Widgets</a></li>
+						</ul>
+					</li>
+					<li class="sidebar-list-item"><i class="fe fe-edit"></i><span>Forms</span><i class="fas fa-chevron-down pull-right"></i></li>
+					<li>
+						<ul>
+							<li><a class="sidebar-list-item" href="form-basic.html">Basic form</a></li>
+							<li><a class="sidebar-list-item" href="form-wizzard.html">Form wizzard</a></li>
+							<li><a class="sidebar-list-item" href="form-validation.html">Form validation</a></li>
+							<li><a class="sidebar-list-item" href="form-editor.html">Form editor</a></li>
+						</ul>
+					</li>
+					<li><a class="sidebar-list-item" href="typography.html"><i class="fe fe-type"></i> <span>Typography</span></a></li>
+				</ul>
+			</nav>
+		</aside>
+		<header class="header">
+			<ul class="header-nav">
+				<li>
+					<button id="js-toggle-sidebar" class="header-nav-item">
+						<i class="fas fa-bars"></i>
+					</button>
+				</li>
+			</ul>
+			<ul class="header-nav d-none d-sm-flex">
+				<li>
+					<a href="#" data-dropdown class="header-nav-item">Dashboard</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="dashboard-1.html">Dashboard 1</a></li>
+						<li><a class="dropdown-item" href="dashboard-2.html">Dashboard 2 (v.1)</a></li>
+						<li><a class="dropdown-item" href="dashboard-2-1.html">Dashboard 2 (v.2)</a></li>
+						<li><a class="dropdown-item" href="dashboard-3.html">Dashboard 3</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" data-dropdown class="header-nav-item">Layout</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="dashboard-1.html">Standart</a></li>
+						<li><a class="dropdown-item" href="layout-horizontal-fluid.html">Horizontal fluid</a></li>
+						<li><a class="dropdown-item" href="layout-horizontal-boxed.html">Horizontal boxed</a></li>
+						<li><a class="dropdown-item" href="layout-inverse-horizontal-fluid.html">Inversed horizontal fluid</a></li>
+						<li><a class="dropdown-item" href="layout-inverse-horizontal-boxed.html">Inversed horizontal boxed</a></li>
+					</ul>
+				</li>
+			</ul>
+			
+			<ul class="header-nav pull-right">
+				<li>
+					<a href="#" data-dropdown class="header-nav-item">
+						<i class="far fa-envelope"></i>
+						<span class="badge badge-pill badge-success">2</span>
+					</a>
+					<ul class="dropdown-menu px-20 py-10">
+						<li class="message">
+							<div class="avatar avatar-sm">
+								<img src="images/avatar-3.jpg" alt="">
+							</div>
+							<div class="message-content">
+								<div class="message-bubble">
+									<p>Hello, John!</p>
+								</div>
+								<small class="text-secondary text-sm">Today, 10:31</small>
+							</div>
+							<div class="message-actions">
+								<button><i class="far fa-trash-alt"></i></button>
+								<button><i class="far fa-flag"></i></button>
+							</div>
+						</li>
+						<li class="message">
+							<div class="avatar avatar-sm">
+								<img src="images/avatar-3.jpg" alt="">
+							</div>
+							<div class="message-content">
+								<div class="message-bubble">
+									<p>What about our project?</p>
+								</div>
+								<small class="text-secondary text-sm">Today, 10:32</small>
+							</div>
+							<div class="message-actions">
+								<button><i class="far fa-trash-alt"></i></button>
+								<button><i class="far fa-flag"></i></button>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" data-dropdown class="header-nav-item">
+						<i class="far fa-bell"></i>
+						<span class="badge badge-pill badge-primary">3</span>
+					</a>
+					<ul class="dropdown-menu px-20 py-10">
+						<li class="event-column event-column-success">
+							<div class="event-content">
+								<small class="text-secondary"><i class="far fa-envelope"></i> From example@gmail.com</small>
+								<p><a href="#">Alex White</a> sent you an email.</p>
+							</div>
+							<small class="text-secondary pull-right">1 hr.</small>
+						</li>
+						<li class="event-column event-column-primary">
+							<div class="event-content">
+								<small class="text-secondary"><i class="fas fa-thumbtack"></i> New task</small>
+								<p><b>To <a href="#">John Doe</a>: new API methods.</b></p>
+								<p class="text-secondary text-sm">Implement new API methods for mobile app.</p>
+							</div>
+							<small class="text-secondary pull-right">7 min.</small>
+						</li>
+						<li class="event-column event-column-secondary">
+							<div class="event-content">
+								<small class="text-secondary"><i class="far fa-bell"></i> Notification</small>
+								<p><a href="#">Alex White</a> joined to project</p>
+							</div>
+							<small class="text-secondary pull-right">now</small>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" id="js-enter-fullscreen" class="header-nav-item">
+						<i class="fas fa-expand-arrows-alt"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#" data-dropdown class="user-panel">
+						<div class="user-panel-image">
+							<div class="avatar avatar-sm">
+								<img src="images/avatar-1.jpg" alt="">
+							</div>
+						</div>
+						<div class="user-panel-info">
+							<p>John Doe</p>
+							<small class="text-black-50">Administrator</small>
+						</div>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="page-profile.html"><i class="far fa-user"></i> Profile</a></li>
+						<li class="dropdown-divider"></li>
+						<li><a class="dropdown-item" href="page-signin.html"><i class="fas fa-power-off"></i> Logout</a></li>
+					</ul>
+				</li>
+			</ul>
+		</header>
+		<main class="content">
+			<div class="container-fluid">
+				<div class="content-header">
+					<h1>John Doe</h1>
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="dashboard-1.html">Dashboard</a></li>
+							<li class="breadcrumb-item active">John Doe</li>
+						</ol>
+					</nav>
+				</div>
+				<div class="card card-bg card-bg-solid transition-dark-bottom">
+					<div class="card-image">
+						<img src="images/stock-1.jpg" alt="">
+					</div>
+					<div class="card-body card-body-jumbotron">
+						<div class="d-flex flex-column">
+							<h3 class="text-white mb-0 display-4">John Doe</h3>
+							<small class="text-white-50">Administrator and maintainer</small>
+						</div>
+						<div class="d-flex flex-column">
+							<div class="d-flex justify-content-center text-white mb-15">
+								<a href="#1" class="icon"><i class="fab fa-facebook"></i></a>
+								<a href="#2" class="icon"><i class="fab fa-twitter"></i></a>
+								<a href="#3" class="icon"><i class="fab fa-instagram"></i></a>
+								<a href="#4" class="icon"><i class="fab fa-linkedin"></i></a>
+								<a href="#6" class="icon"><i class="fab fa-vk"></i></a>
+							</div>
+							<div class="btn-toolbar">
+								<a href="#" class="btn btn-primary">Message</a>
+								<a href="#" class="btn btn-success">Follow</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="profile">
+							<div class="profile-bg profile-bg-blur">
+								<img src="images/avatar-1.jpg" alt="">
+							</div>
+							<div class="user-panel user-panel-column">
+								<div class="user-panel-image">
+									<div class="avatar avatar-lg avatar-bordered">
+										<img src="images/avatar-1.jpg" alt="">
+									</div>
+								</div>
+								<div class="user-panel-info mb-10">
+									<p class="text-black">John Doe</p>
+									<small class="text-secondary">Administrator</small>
+								</div>
+								<div class="btn-toolbar justify-content-center">
+									<a href="#" class="btn btn-primary btn-sm">Message</a>
+									<a href="#" class="btn btn-success btn-sm">Follow</a>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col-4">
+									132
+									<small class="text-secondary d-block">Articles</small>
+								</div>
+								<div class="col-4">
+									1 754
+									<small class="text-secondary d-block">Followers</small>
+								</div>
+								<div class="col-4">
+									91
+									<small class="text-secondary d-block">Following</small>
+								</div>
+							</div>
+						</div>
+						<div class="box">
+							<div class="box-header">
+								<h3 >Followers</h3>
+							</div>
+							<div class="box-body">
+								<div class="user-panel">
+									<div class="user-panel-image">
+										<a href="#" class="avatar avatar-sm">
+											<i class="fas fa-circle text-success"></i>
+											<img src="images/avatar-1.jpg" alt="">
+										</a>
+									</div>
+									<div class="user-panel-info">
+										<a href="#">John Doe</a>
+										<small class="text-secondary">142 followers</small>
+									</div>
+									<div class="user-panel-actions">
+										<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+									</div>
+								</div>
+								<div class="user-panel">
+									<div class="user-panel-image">
+										<a href="#" class="avatar avatar-sm">
+											<i class="fas fa-circle text-success"></i>
+											<img src="images/avatar-1.jpg" alt="">
+										</a>
+									</div>
+									<div class="user-panel-info">
+										<a href="#">John Doe</a>
+										<small class="text-secondary">142 followers</small>
+									</div>
+									<div class="user-panel-actions">
+										<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+									</div>
+								</div>
+								<div class="user-panel">
+									<div class="user-panel-image">
+										<a href="#" class="avatar avatar-sm">
+											<img src="images/avatar-1.jpg" alt="">
+										</a>
+									</div>
+									<div class="user-panel-info">
+										<a href="#">John Doe</a>
+										<small class="text-secondary">142 followers</small>
+									</div>
+									<div class="user-panel-actions">
+										<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+									</div>
+								</div>
+								
+							</div>
+							<div class="box-footer">
+								<a href="#" class="text-secondary text-sm d-block">Show more followers <i class="fas fa-chevron-right"></i></a>
+							</div>
+						</div>
+						<div class="box">
+							<div class="box-header">
+								<h3 >Videos</h3>
+								<div class="badge">71</div>
+							</div>
+							<div class="box-body">
+								<div class="video">
+									<div class="video-content">
+										<iframe height="160" src="https://www.youtube.com/embed/0I647GU3Jsc" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+									</div>
+									<div class="video-title">
+										<a href="#">Some inresting video 1</a>
+										<small class="text-secondary text-sm">01:37</small>
+									</div>
+									<small class="text-secondary text-sm">
+										<i class="far fa-heart"></i> 312 &nbsp;
+										<i class="far fa-comment"></i> 14
+									</small>
+								</div>
+								<div class="video">
+									<div class="video-content">
+										<iframe height="160" src="https://www.youtube.com/embed/hjujTTRB01E" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+									</div>
+									<div class="video-title">
+										<a href="#">Some inresting video 2</a> 
+										<small class="text-secondary">02:12</small>
+									</div>
+									<p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, fugiat aut? Quas provident numquam, accusantium.</p>
+									<small class="text-secondary text-sm">
+										<i class="far fa-heart"></i> 1743 &nbsp;
+										<i class="far fa-comment"></i> 89
+									</small>
+								</div>
+							</div>
+							<div class="box-footer">
+								<a href="#" class="text-secondary text-sm d-block">Show more videos <i class="fas fa-chevron-right"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-8">
+						<div class="box">
+							<div class="box-header">
+								<h3 >Profile</h3>
+							</div>
+							<div class="box-body">
+								<div class="mb-10">
+									<div class="text-partition">
+										<b>General</b>
+										<a href="#">Edit</a>
+									</div>
+									<dl class="row">
+										<dt class="col-md-3">Full name:</dt>
+										<dd class="col-md-9">John Doe</dd>
+										<dt class="col-md-3">Location:</dt>
+										<dd class="col-md-9 d-flex">San Francisco, California, USA <a class="pull-right" href="#">Edit</a></dd>
+										<dt class="col-md-3">Web site:</dt>
+										<dd class="col-md-9"><a href="#">https://example.com</a></dd>
+										<dt class="col-md-3">About:</dt>
+										<dd class="col-md-9">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum totam architecto vel, minus eaque hic ipsum eligendi commodi labore quasi sit reprehenderit quas consectetur, ipsam tenetur expedita corporis odio repellat. </dd>
+									</dl>
+								</div>
+								<div class="mb-10">
+									<div class="text-partition">
+										<b>Contacts</b>
+										<a href="#">Edit</a>
+									</div>
+									<dl class="row">
+										<dt class="col-md-3">Phone:</dt>
+										<dd class="col-md-9">8(800)111-11-11</dd>
+										<dt class="col-md-3">Facebook:</dt>
+										<dd class="col-md-9"><a href="#">https://facebook.com/john_doe</a></dd>
+										<dt class="col-md-3">Twitter:</dt>
+										<dd class="col-md-9">@johndoe</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<div class="info-box">
+									<div class="info-box-content">
+										<div class="info-box-text">
+											<span class="info-box-number">543</span>
+											Works
+										</div>
+										<div class="info-box-icon text-primary">
+											<i class="i-paper"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="info-box">
+									<div class="info-box-content">
+										<div class="info-box-text">
+											<span class="info-box-number">94</span>
+											Comments
+										</div>
+										<div class="info-box-icon text-warning">
+											<i class="i-chat-bubble"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="info-box">
+									<div class="info-box-content">
+										<div class="info-box-text">
+											<span class="info-box-number">894</span>
+											Likes
+										</div>
+										<div class="info-box-icon text-danger">
+											<i class="i-like"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="box">
+							<div style="height: 300px; width: 100%" id="map"></div>
+						</div>
+						<h2 class="content-title">Posts</h2>
+						<button data-toggle="#postCreate" class="btn btn-primary btn-block mb-20">Add new post (click me!)</button>
+						<div id="postCreate" class="box hidden">
+							<div class="box-header">
+								<h3><i class="fas fa-pencil-alt text-primary"></i> Create post</h3>
+							</div>
+							<div class="box-body">
+								<div class="form-group">
+									<label for="createPost">Enter post text:</label>
+									<textarea id="createPost" class="form-control"></textarea>
+									<small class="text-secondary text-sm">1500 max. characters</small>
+								</div>
+								<div class="form-group">
+									<label for="fileInput">Files:</label>
+									<input id="fileInput" type="file" class="form-control">
+									<small class="text-secondary text-sm">15MB max. Formats: PDF, DOC, XLS, TXT, PNG, JPG.</small>
+								</div>
+								<div class="form-group">
+									<label>Options:</label>
+									<div class="d-flex">
+										<label class="form-checkbox-custom">
+											<input type="checkbox">
+											<span class="form-label">Don't notify</span>
+										</label>
+										<label class="form-checkbox-custom">
+											<input type="checkbox">
+											<span class="form-label">Fixed</span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="box-footer d-flex">
+								<button class="btn btn-success">Submit</button>
+								<a href="#" class="btn btn-link-secondary pull-right">Cancel</a>
+							</div>
+						</div>
+						<div class="box">
+							<div class="box-body">
+								<div class="user-panel">
+									<div class="user-panel-image">
+										<a href="#" class="avatar avatar-sm">
+											<i class="fas fa-circle text-success"></i>
+											<img src="images/avatar-1.jpg" alt="">
+										</a>
+									</div>
+									<div class="user-panel-info">
+										<a href="#">John Doe</a>
+										<small class="text-secondary">3 hours ago</small>
+									</div>
+									<div class="user-panel-actions">
+										<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+									</div>
+								</div>
+								<hr>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur officia laboriosam, blanditiis obcaecati hic veniam itaque modi! Repudiandae consectetur eligendi quasi cupiditate? Necessitatibus aspernatur, sapiente illum, ipsa sequi consectetur placeat?</p>
+								<hr>
+								<div class="d-flex">
+									<button class="btn btn-link-secondary"><i class="far fa-heart"></i> 14</button>
+									<button class="btn btn-link-secondary"><i class="far fa-comment"></i> 5</button>
+									<span class="btn btn-link-secondary pull-right"><i class="fas fa-eye"></i> 378</span>
+								</div>
+							</div>
+							<div class="box-footer">
+								<div class="comments bg-white">
+									<div class="user-panel align-items-start">
+										<div class="user-panel-image">
+											<a href="#" class="avatar avatar-sm">
+												<img src="images/avatar-2.jpg" alt="">
+											</a>
+										</div>
+										<div class="user-panel-info">
+											<a href="#">Sam Lee</a>
+											<p class="text-secondary">Good thinking!</p>
+										</div>
+										<div class="user-panel-actions text-black-25">
+											<small class="text-secondary">1 hour ago</small>
+											<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+										</div>
+									</div>
+									<div class="user-panel align-items-start">
+										<div class="user-panel-image">
+											<a href="#" class="avatar avatar-sm">
+												<img src="images/avatar-3.jpg" alt="">
+											</a>
+										</div>
+										<div class="user-panel-info">
+											<a href="#">Alex White</a>
+											<p class="text-secondary">Very intresting...</p>
+										</div>
+										<div class="user-panel-actions text-black-25">
+											<small class="text-secondary">47 minutes ago</small>
+											<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+										</div>
+									</div>
+									<div class="user-panel align-items-start">
+										<div class="user-panel-image">
+											<a href="#" class="avatar avatar-sm">
+												<img src="images/avatar-4.jpg" alt="">
+											</a>
+										</div>
+										<div class="user-panel-info">
+											<a href="#">Jessica Evans</a>
+											<p class="text-secondary">It's seems like a great idea!</p>
+										</div>
+										<div class="user-panel-actions text-black-25">
+											<small class="text-secondary">1 minute ago</small>
+											<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+										</div>
+									</div>
+									<button class="btn btn-primary btn-block mt-15">Load more comments</button>
+								</div>
+							</div>
+						</div>
+						<div class="box">
+							<div class="box-body">
+								<div class="user-panel">
+									<div class="user-panel-image">
+										<a href="#" class="avatar avatar-sm">
+											<i class="fas fa-circle text-success"></i>
+											<img src="images/avatar-3.jpg" alt="">
+										</a>
+									</div>
+									<div class="user-panel-info">
+										<a href="#">Alex White</a>
+										<small class="text-secondary">2 days ago</small>
+									</div>
+									<div class="user-panel-actions">
+										<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+									</div>
+								</div>
+								<hr>
+								<p>Hey, look at my photos! Great, isn't it?</p>
+								<div class="d-flex flex-wrap">
+									<div class="img-square img-rounded">
+										<img src="images/stock-1.jpg" alt="">
+									</div>
+									<div class="img-square img-rounded">
+										<img src="images/stock-2.jpg" alt="">
+									</div>
+									<div class="img-square img-rounded">
+										<img src="images/stock-3.jpg" alt="">
+									</div>
+									<div class="img-square img-rounded">
+										<img src="images/stock-4.jpg" alt="">
+									</div>
+									<div class="img-square img-rounded">
+										<img src="images/stock-5.jpg" alt="">
+									</div>
+								</div>
+								<hr>
+								<div class="d-flex">
+									<button class="btn btn-link-secondary"><i class="far fa-heart"></i> 14</button>
+									<button class="btn btn-link-secondary"><i class="far fa-comment"></i> 5</button>
+									<span class="btn btn-link-secondary pull-right"><i class="fas fa-eye"></i> 78</span>
+								</div>
+							</div>
+							<div class="box-footer">
+								<div class="comments bg-white">
+									<div class="user-panel align-items-start">
+										<div class="user-panel-image">
+											<a href="#" class="avatar avatar-sm">
+												<img src="images/avatar-1.jpg" alt="">
+											</a>
+										</div>
+										<div class="user-panel-info">
+											<a href="#">John Doe</a>
+											<p class="text-secondary">Yeah, nice photos! Well done.</p>
+										</div>
+										<div class="user-panel-actions text-black-25">
+											<small class="text-secondary">2 days ago</small>
+											<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button class="btn btn-link btn-block mb-20">Show more</button>
+						<button class="btn btn-link btn-block mb-20"><i class="i-spinner loading"></i></button>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+		
+	<script src="https://cdn.ckeditor.com/4.10.1/standard/ckeditor.js"></script>
+	<script src="assets/js/app.js"></script>
+</body>
+
+</html>
